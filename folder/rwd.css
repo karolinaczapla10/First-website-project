@@ -1,0 +1,163 @@
+body { background:#d4c7b9; }
+
+h1,h2,footer { padding:0.2em; text-align:center; }
+
+.srodek { text-align:center;}
+
+nav{ float:left; width:100%; }
+
+nav, footer {background: #45525a; color:#ffe9ba; border-radius:10px;}
+
+nav a {
+ float:left;
+ display:block; 
+ width:23%; 
+ padding:1%;
+ font-size:110%;
+ color:#ffe9ba;
+ text-align:center;
+}
+section { clear:both;}
+
+img { max-width: 100%; height: auto; border-radius:10px; }
+
+.slajd {
+ float:left;
+ display:block; 
+ width:13%;
+ text-align:center;
+ border-radius:10px;
+ background:#ffe9ba;
+ padding:1% 0.5%;
+ margin:1%; 
+}
+.slajd:hover { background:#45525a; }
+
+footer { clear:both; }
+
+.galeria{ margin:auto; width:90%;}
+
+@media screen and (max-width: 720px) { 
+ nav a { width: 48%;
+        padding: 10px 0; 
+        font-size:140%; 
+        } 
+        .slajd {width: 45%; } 
+} 
+@media screen and (min-width: 481px) and (max-width: 720px) { 
+    body { font-size: 13px; } 
+    h1 { font-size: 23px; } 
+    h2 { font-size: 18px; } 
+}
+
+
+
+ @media screen and (min-width: 320px) and (max-width: 479px){ 
+     .galeria{width: 100%}
+      nav a{width:100%}
+      nav a{border-bottom: 3px solid white}
+      img{width:90%}
+     .slajd{width:90%}
+     .slajd{
+          background: green;
+          margin-left: 9px;
+          
+      }
+      .nav, footer {background: blue; color:white; border-radius:20px;}
+      
+      
+
+}
+
+ @media screen and (min-width: 480px) and  (orientation: portrait)  { 
+      .galeria{width: 90%}
+      img{width:90%}
+      
+     .slajd{width:100%}
+     .slajd{
+          background: red;
+         
+          
+      }
+      .nav, footer {background: red; color:darkblue; border-radius:10px;}
+
+}
+
+
+@media screen and (min-width: 640px) and (orientation: landscape)  { 
+      .galeria{width: 90%}
+      img{width:90%}
+      
+     .slajd{width:100%}
+      .slajd{
+          background: red;
+         
+          
+      }
+      .nav, footer {background: white; color:darkblue; border-radius:10px;}
+
+}
+
+@media only screen and (min-width : 768px) 
+ and (max-width : 1024px) 
+ and (orientation : landscape) 
+ { 
+    img{width:100%}
+    .slajd{width:100%}
+     .nav, footer {background: pink; color:darkblue; border-radius:10px;}
+ }
+@media screen and (max-width: 720px) {
+    nav{
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+    }
+
+    nav a { 
+        width: 48%;
+        padding: 10px 0;
+        font-size:140%;
+        border-bottom: 1px solid white; 
+    }
+    .slajd {
+        width: 45%; 
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 720px) {
+    body { 
+        font-size: 13px; 
+    }
+    h1 { 
+        font-size: 23px; 
+    }
+    h2 { 
+        font-size: 18px; 
+    }
+}
+
+@media screen and (max-width: 481px) {
+    nav{
+        flex-direction: column;
+    }
+    nav a { 
+       width: 100%;
+       border-bottom: 1px solid white; 
+    }
+
+    .slajd {
+        width: 100%; 
+    }
+}
+
+@media only screen and (min-width : 768px)
+and (max-width : 1024px)
+and (orientation : landscape)
+{
+    nav a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .slajd {
+        width: 45%; 
+    }
+}

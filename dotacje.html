@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title> Formularz dotacji</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="folder/nowy.css" type="text/css" />
+    </head>
+    <body>
+        
+            <div id="kontener">
+                <h2>Formularz dotacji</h2>
+           
+            
+        <form action="mailto:karolinaczapla@gmail.com" method="get">
+             
+           <fieldset><legend></legend>
+               <label> Benificjent: <input list="organizacja" name="benificjent" title="Wybierz swojego beneficjenta" required></label>
+               <datalist id="organizacja">
+                    <option value="Wioski dziecięce SOS">Wioski dziecięce SOS</option>
+                    <option value="Schronisko dla zwierząt">Schronisko dla zwierząt</option>
+                    <option value="Ośrodek pomocy dla dzieci">Ośrodek pomocy dla dzieci</option>
+                    <option value="Dom dziecka">Dom dziecka</option>
+               </datalist>
+               
+               <br>
+               <label>
+                   Wartość dotacji: 
+                        <input type="number" name="dotacja"  min="20" step=10 title="Wartość dotacji większa niż 20" required>
+               </label>
+            </fieldset><br />
+           
+                <fieldset><legend>Dane karty płatniczej</legend> 
+                    Karta:
+                        <label><input type="radio" name="platnosc" value="v" > Visa </label>
+                        <label><input type="radio" name="platnosc" value="mc" > Mater Card </label><br/>    
+                <label> 
+                    Numer karty:
+                        <input type="tel" title="Podaj nr swojej karty" pattern="[0-9]{13}|[0-9]{16}" > <br />
+                </label>  
+                <label> 
+                    Data ważności:
+                        <input type="month" name="month" title="data ważności karty" required> <br /> 
+                </label>
+                
+                <label>
+                    Kod CVV:
+                        <input type="tel" name="wartosc" placeholder="3 lub 4 cyfy"
+                               title="Kod CVV sklada sie z  3 lub 4 cyfr na odwrocie karty." 
+                               pattern="[0-9]{3,4}" required><br/> 
+                </label>
+               
+           </fieldset><br />
+           
+                <label>
+                    Darczyńca:
+                        <input type="text" name="imie" minlength="3" pattern="([A-Za-z\. -]+){3,}" required><br/>
+
+                </label>
+                <br/><input type="submit" value="Rejestruj">
+                </form><!-- comment -->
+        </div>
+    </body>
+</html>

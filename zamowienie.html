@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Szybki kurs HTML </title>
+</head>
+
+    <div id="kontener">
+        <h2 id="baner">Kreator pizzy</h2>
+    </div>
+<form action="mailto:karolinaczapla@gmail.com" method="post">
+    <div>
+        <fieldset><legend>Rozmiar:</legend>
+                <input type="radio" name="roz" value="m" /> Mała <br />
+                <input type="radio" name="roz" value="s" /> Średnia <br />
+                <input type="radio" name="roz" value="d" /> Duża<br />
+         </fieldset><br />
+         <fieldset><legend>Dodatki:</legend>
+                <input type="checkbox" name="szynka" value="Szynka" /> Szynka<br />
+                <input type="checkbox" name="salami" value="salami" /> Salami<br />
+                <input type="checkbox" name="boczek" value="boczek" /> Boczek<br />
+                <input type="checkbox" name="papryka" value="papryka" /> Papryka<br />
+                <input type="checkbox" name="pomidor" value="pomidor" /> Pomidor<br />
+                <input type="checkbox" name="ser" value="ser" /> Ser<br />
+        </fieldset><br />
+        <fieldset><legend>Sosy:</legend>
+        Wybiersz sos:<select name="s" size="4" multiple="multiple">
+                <option value="pomidorowy">Pomidorowy</option>
+                <option value="czosnkowy">Czosnkowy</option>
+                <option value="ketchup lagodny">Ketchup łagodny</option>
+                <option value="ketchup pikantny">Ketchup pikantny</option>
+                <option value="seczuanski">Seczuański</option>
+        </select><br>
+        Inne uwagi: <textarea id="uwagi" name="u" rows="5" cols="70"></textarea>
+        </fieldset><br />
+            <input type="reset" value="Wyczyść dane" />
+            <input type="submit" value="Wyślij zamowienie" />
+
+    </div>
+</form>

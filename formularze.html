@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+		<meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link rel="stylesheet" href="folder/formularze.css" type="text/css" />
+		<title> Szybki kurs HTML </title>
+                
+                    
+</head>
+	<body>
+		<header>
+                    <h2>Szybki kurs HTML</h2>
+                </header>
+                <nav>
+                        <ul id="nav"> 
+                            <li><a href="karolina.html">Podstawy</a></li> 
+                            <li><a href="tabele.html">Tabele</a></li> 
+                            <li><a href="">Formularze</a> 
+                        <ul> 
+                            <li><a href="formularze.html" >Pola formularza</a></li> 
+                            <li><a href="obliczenia.html" >Obliczenia w formularzu</a></li> 
+                        </ul> 
+                        </li>   
+                            <li><a href="galeria.html" title="">Galeria</a></li> 
+                        </ul> 
+                </nav>
+                
+             <section>
+                <div class="tresc">
+                            <h2> Podstawowe znaczniki do tworzenia tabel to: </h2>
+                            <ul>
+                                    <li> &lt;from&gt;- znacznik podtsawowy zawierajacy pola formularza </li>
+                                    <li> &lt;input&gt;- znacznik umozliwia wstawienie roznych pol (pole tekstowe, przycisk typu radio, przycisk typu checkbox)w zaleznosci od wartosci jego atrybutu type </li>
+                                    <li> &lt;select&gt;- pole formularza typu lista rozwijana </li>
+                                    <li> &lt;textarea&gt;- pole formularza typu obszar tekstowy </li>
+                                    <li> &lt;button&gt;- pole formularza typu przycisk </li>
+                            </ul>
+               
+                </div>
+                 
+           
+                 
+                    <aside>
+              
+                        <h4>Walidatory:</h4>
+                            <ul>
+                                <li> <a href="http://validator.w3.org/">HTML </a></li>
+                                <li> <a href="http://jigsaw.w3.org/css-validator/">CSS</a></li>
+                            </ul>
+
+                         <h4>Kursy:</h4>
+                             <ul>
+                                 <li> <a href="https://www.w3schools.com/html/"> HTML </a></li>
+                                 <li> <a href="https://www.w3schools.com/css/"> CSS </a></li>
+                                 <li> <a href="https://www.w3schools.com/js/"> JS </a></li>
+                                 <li> <a href="https://www.w3schools.com/php/"> PHP </a></li>
+                             </ul>
+                    </aside>
+                 </section>
+                 <div class="form">
+                        <form action="mailto:xxx@xxx.xx" method="POST">
+                            <h2>Przykładowy formularz HTML: </h2>
+                         <table>  
+                              
+                             <tr>
+                                 <td><label>Nazwisko: </label></td>
+                                 <td><input type="text" name="nazwisko" placeholder="nazwisko" title="Wprowadz przynajmniej 3 znaki" pattern="{3,}" required/></td>
+                             </tr>
+                             <tr>
+                                 <td><label>Wiek: </label></td>
+                                 <td><input type="number" name="wiek" min="16" max="120" title="Zaznacz swój wiek" required/> </td>
+                             </tr>
+
+                             <tr>
+                                 <td><label>Państwo : </label></td>
+                                 <td><select name="select">
+                                 <option value="Polska">Polska</option>
+                                 <option value="Niemcy">Niemcy</option>
+                                 <option value="Białoruś">Białoruś</option>
+                                 </select></td>
+                             </tr>
+                             <tr>
+                                 <td><label>Adres e-mail: </label></td>
+                                 <td><input type="email" id="address" name="mail" placeholder="Podaj adres" title="Podaj maila" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required/></td>
+                             </tr>
+                             <tr>
+                                 <td><label>Telefon: </label></td>
+                                 <td><input type="tel" id="numer" name="numer" placeholder="xxx-xxx-xxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"></td>
+                             </tr>
+                             
+                         </table>
+
+                            <br><b>Zamawiam tutorial z języka: </b>
+                                <input type="radio" name="tutorial" value="Ff" /> PHP 
+                                 <input type="radio" name="tutorial" value="Ch" /> C/C++
+                                 <input type="radio" name="tutorial" value="II" /> Java<br />
+                            <b><br><br/> Sposób zapłaty:</b><br> <br />
+                            <input type="radio" name="sposób" value="Ff" /><label> eurocard </label>
+                            <input type="radio" name="sposób" value="Ch" /> <label>visa </label>
+                            <input type="radio" name="sposób" value="II" /><label> przelew bankowy </label><br/>
+                                 <input type="submit" value="Wyślij" />
+                                 <input type="reset" value="Wyczyść" />
+                         </form>
+                </div>
+              
+               <footer>
+                    <h3>&copy;BP</h3>
+                </footer> 
+              
+	</body>
+</html>
+

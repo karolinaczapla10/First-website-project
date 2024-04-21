@@ -1,0 +1,236 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2022-03-11, 13:06:22
+    Author     : student
+*/
+body{
+margin-left: 20px;
+margin-right: 20px;
+background: whitesmoke;
+border:1px solid red;
+padding:3px;
+}
+.czerwone{
+    color:red;
+}
+
+h2{
+background: lightskyblue;
+color: darkblue;
+text-align:center;
+font-family: 'Comic Sans MS';
+
+}
+h1{
+background: lightskyblue;
+color: darkblue;
+text-align:center;
+margin-bottom:40px;
+font-family: 'Comic Sans MS';
+}
+h4{
+font-family: 'Comic Sans MS';
+}
+#nav {
+display:flex;
+flex-direction: row;
+background:white;
+width:98%;
+padding:1%;
+margin-bottom:40px;
+}
+section{
+display:flex; 
+flex-direction: row;
+margin: 20px;
+display:flex;
+width: 90%;
+justify-content: flex-start;
+}
+
+.tresc {   
+flex-grow: 1;
+background:lightskyblue;
+color:darkblue;
+width:60%;
+padding:1%;
+margin: 20px;
+border-radius: 15px;
+box-shadow: 0 0 2em lightskyblue;
+}
+
+aside { 
+flex-direction: column;
+flex-grow: 1;
+flex-shrink: 2;
+flex-basis: 0;
+width:400px;
+height:auto;
+background:lightskyblue;
+color:darkblue;
+padding:5px;
+margin:20px;;
+font-size:90%;
+border-radius: 5px;
+box-shadow: 0 0 2em lightskyblue;
+}
+.form {
+flex-direction: column;
+flex-grow: 1;
+flex-shrink: 1;
+background:lightskyblue;
+color:darkblue;
+width:50%;
+padding:1%;
+margin-left: 40px;
+border-radius: 15px;
+box-shadow: 0 0 2em lightskyblue;
+
+}
+
+footer{
+width:100%;
+text-align:center;
+background: lightskyblue;
+color: darkblue;
+}
+
+
+label
+{
+font-size:120%; 
+}
+
+
+/* umieszczenie stopki poniżej elementów z float */
+
+
+/*Nawigacja: */
+ul#nav li { 
+ border: 1px solid #d5d5d5; 
+ list-style-type: none; 
+ 
+ background: lightcyan; 
+ margin-left: 20px; 
+ box-shadow: 0 0 2em lightskyblue;
+} 
+ul#nav li:hover { 
+ border: 1px solid #d5d5d5; 
+ list-style-type: none; 
+ 
+ background: lightskyblue; 
+ margin-left: 3px; 
+} 
+ul#nav li a { 
+ display : block; 
+ padding : 4pt; 
+ text-decoration : none; 
+} 
+ul#nav li li a { 
+ width: 160px; 
+} 
+ul#nav li li:hover { 
+ background: white;
+
+ 
+} 
+ul#nav li ul { 
+ overflow: hidden; 
+ display: none; 
+} 
+ul#nav li:hover ul { 
+ position: absolute; 
+ background: #aaa; 
+ padding: 0; 
+ display: block; 
+ width: 177px; 
+}
+
+
+@media only screen and (max-width : 720px)
+{
+  
+   section{
+    display:flex; 
+    
+   }
+   .tresc{
+       flex-direction: column;
+       width:90%;
+   }
+   aside{
+       flex-direction: row;
+       width: 90%;
+   }
+   
+   .form{
+       display:flex; 
+        flex-direction: column;
+        width: 80%;
+   }
+    #nav{
+       display:flex;
+        flex-direction: column;    
+       width:90%;
+       align-content: center;
+       margin-left: 10px;
+   }
+
+}
+
+@media only screen and (max-width : 570px)
+{
+  
+   section{
+    display:flex; 
+    flex-direction: column;
+   }
+   .tresc{
+       width:80%;
+   }
+   aside{
+       width: 80%;
+   }
+   .form{
+       display:flex; 
+        flex-direction: column;
+        width: 75%;
+        
+         
+   }
+
+}
+
+@media only screen and (max-width : 420px)
+{
+  
+   section{
+    display:flex; 
+    flex-direction: column;
+   }
+   #nav{
+       display:flex;
+        flex-direction: column;    
+       width:80%;
+       align-content: center;
+       margin-left: 10px;
+   }
+   .tresc{
+       width:80%;
+   }
+   aside{
+       width: 75%;
+   }
+   .form{
+       display:flex; 
+        flex-direction: column;
+        width: 75%;
+        
+         
+   }
+
+}
